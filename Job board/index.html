@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job-website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:ital@1&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slidebar -->
+    <input type="checkbox" name="" id="check" />
+    <div class="container">
+      <label for="check">
+        <span class="fas fa-times" id="times"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+            /></svg
+        ></span>
+        <span class="fas fa-times" id="bars"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            /></svg
+        ></span>
+      </label>
+      <!--the main side bar this is the class of that-->
+      <div class="head"><h1>Find-Jobs</h1></div>
+      <ol>
+        <li>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-house-heart-fill"
+              viewBox="0 0 16 16"
+              style="padding-right: 3px"
+            >
+              <path
+                d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"
+              />
+              <path
+                d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"
+              /></svg
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-bar-chart-fill"
+              viewBox="0 0 16 16"
+              style="padding-right: 3px"
+            >
+              <path
+                d="M1 11a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3zm5-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2z"
+              /></svg
+            >Analysis</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-folder-fill"
+              viewBox="0 0 16 16"
+              style="padding-right: 3px"
+            >
+              <path
+                d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"
+              /></svg
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-plus-square-fill"
+              viewBox="0 0 16 16"
+              style="padding-right: 3px"
+            >
+              <path
+                d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"
+              /></svg
+            >Posts</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-person-lines-fill"
+              viewBox="0 0 16 16"
+              style="padding-right: 3px"
+            >
+              <path
+                d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"
+              /></svg
+            >My Networks</a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-gear-fill"
+              viewBox="0 0 16 16"
+              style="padding-right: 3px"
+            >
+              <path
+                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+              /></svg
+            >Settings</a
+          >
+        </li>
+      </ol>
+    </div>
+    <!-- section home -->
+    <section class="home">
+      <div class="content">
+        <div class="search">
+          <textarea name="" id="" cols="100" rows="1"></textarea>
+          <button class="btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="filter-wrapper">
+        <p>Recomendation</p>
+        <div class="filter">
+          <button class="btn-filter">Data Science</button>
+          <button class="btn-filter">Data Engineer</button>
+          <button class="btn-filter">Data Analyst</button>
+          <button class="btn-filter">Data Visualization</button>
+          <button class="btn-filter">CRM Analyst</button>
+        </div>
+      </div>
+      <div class="sort">
+        <p>Sort</p>
+        <div class="sort-list">
+          <select name="" id="">
+            <option value="0">All</option>
+            <option value="1">Newest Post</option>
+            <option value="2">Oldest Post</option>
+            <option value="3">Most Relevent</option>
+            <option value="4">Highest Paid</option>
+          </select>
+        </div>
+      </div>
+      <div class="wrapper">
+        <!-- boxes of companyies -->
+        <div class="card">
+          <div class="card-left blue-bg">
+            <img src="./images/google.png" alt="" />
+          </div>
+          <div class="card-content">
+            <h3>
+              <span1>G</span1><span2>O</span2><span3>O</span3><span4>G</span4
+              ><span5>L</span5><span6>E</span6>
+            </h3>
+            <p class="card-details">Data Science, Data Engineer</p>
+            <p class="card-loc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(255, 38, 38)"
+                ;
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              1600 Amphitheatre Parkway in Mountain View, California.
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-calendar-check"
+                viewBox="0 0 16 16"
+                style="color: rgb(8, 85, 238)"
+              >
+                <path
+                  d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                />
+              </svg>
+              1 min ago
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-stopwatch"
+                viewBox="0 0 16 16"
+                style="color: goldenrod"
+              >
+                <path
+                  d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"
+                />
+                <path
+                  d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
+                />
+              </svg>
+              Full Time
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-people-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(14, 102, 202)"
+              >
+                <path
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                />
+              </svg>
+              200 Applicants
+            </p>
+          </div>
+          <div class="card-right">
+            <div class="card-tag">
+              <h5>Division</h5>
+              <a href="#">Data Engineer</a>
+            </div>
+            <div class="card-salary">
+              <p><b>$350k</b><span8>/year</span8></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- box2 of company -->
+
+        <div class="card">
+          <div class="card-left yellow-bg">
+            <img src="./images/microsoft.png" alt="" width="" />
+          </div>
+          <div class="card-content">
+            <h3>Microsoft</h3>
+            <p class="card-details">Data Science, Project Analyst</p>
+            <p class="card-loc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(255, 38, 38)"
+                ;
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              Redmond, Washington, United States
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-calendar-check"
+                viewBox="0 0 16 16"
+                style="color: rgb(8, 85, 238)"
+              >
+                <path
+                  d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                />
+              </svg>
+              10 min ago
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-stopwatch"
+                viewBox="0 0 16 16"
+                style="color: goldenrod"
+              >
+                <path
+                  d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"
+                />
+                <path
+                  d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
+                />
+              </svg>
+              Full Time
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-people-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(14, 102, 202)"
+              >
+                <path
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                />
+              </svg>
+              130 Applicants
+            </p>
+          </div>
+          <div class="card-right" style="margin-left: 8.8rem">
+            <div class="card-tag">
+              <h5>Division</h5>
+              <a href="#">Data Science</a>
+            </div>
+            <div class="card-salary">
+              <p><b>$200k</b><span8>/year</span8></p>
+            </div>
+          </div>
+        </div>
+        <!-- Box3 company -->
+        <div class="card">
+          <div class="card-left yellow-bg">
+            <img src="./images/apple.png" alt="" width="" />
+          </div>
+          <div class="card-content">
+            <h3 style="color: rgb(59, 59, 59)">Apple</h3>
+            <p class="card-details">Data Analyst , Full Stack Developer</p>
+            <p class="card-loc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(255, 38, 38)"
+                ;
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              One Apple Park Way; Cupertino, CA 95014, U.S.A.
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-calendar-check"
+                viewBox="0 0 16 16"
+                style="color: rgb(8, 85, 238)"
+              >
+                <path
+                  d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                />
+              </svg>
+              30 min ago
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-stopwatch"
+                viewBox="0 0 16 16"
+                style="color: goldenrod"
+              >
+                <path
+                  d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"
+                />
+                <path
+                  d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
+                />
+              </svg>
+              Full Time
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-people-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(14, 102, 202)"
+              >
+                <path
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                />
+              </svg>
+              230 Applicants
+            </p>
+          </div>
+          <div class="card-right" style="margin-left: 3rem">
+            <div class="card-tag">
+              <h5>Division</h5>
+              <a href="#">Data Analyst</a>
+            </div>
+            <div class="card-salary">
+              <p><b>$320k</b><span8>/year</span8></p>
+            </div>
+          </div>
+        </div>
+        <!-- Box4 Company -->
+        <div class="card">
+          <div class="card-left yellow-bg">
+            <img src="./images/yt.avif" alt="" width="" />
+          </div>
+          <div class="card-content">
+            <h3 style="color: rgb(59, 59, 59)">Youtube</h3>
+            <p class="card-details">DevOps , Cloud Computer</p>
+            <p class="card-loc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(255, 38, 38)"
+                ;
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              LLC 901 Cherry Ave. San Bruno, CA 94066 USA
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-calendar-check"
+                viewBox="0 0 16 16"
+                style="color: rgb(8, 85, 238)"
+              >
+                <path
+                  d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                />
+              </svg>
+              40 min ago
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-stopwatch"
+                viewBox="0 0 16 16"
+                style="color: goldenrod"
+              >
+                <path
+                  d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"
+                />
+                <path
+                  d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
+                />
+              </svg>
+              Full Time
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-people-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(14, 102, 202)"
+              >
+                <path
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                />
+              </svg>
+              100 Applicants
+            </p>
+          </div>
+          <div class="card-right" style="margin-left: 4rem">
+            <div class="card-tag">
+              <h5>Division</h5>
+              <a href="#">Data Analyst</a>
+            </div>
+            <div class="card-salary">
+              <p><b>$320k</b><span8>/year</span8></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- box5 company -->
+        <div class="card">
+          <div class="card-left yellow-bg">
+            <img src="./images/tesla.png" alt="" width="" />
+          </div>
+          <div class="card-content">
+            <h3 style="color: rgb(197, 7, 7)">TESLA</h3>
+            <p class="card-details">DevOps , Cloud Computer</p>
+            <p class="card-loc">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-geo-alt-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(255, 38, 38)"
+                ;
+              >
+                <path
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                />
+              </svg>
+              Austin, Texas, United States
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-calendar-check"
+                viewBox="0 0 16 16"
+                style="color: rgb(8, 85, 238)"
+              >
+                <path
+                  d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                />
+                <path
+                  d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                />
+              </svg>
+              1 hour ago
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-stopwatch"
+                viewBox="0 0 16 16"
+                style="color: goldenrod"
+              >
+                <path
+                  d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"
+                />
+                <path
+                  d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
+                />
+              </svg>
+              Full Time
+            </p>
+            <p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-people-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(14, 102, 202)"
+              >
+                <path
+                  d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+                />
+              </svg>
+              50 Applicants
+            </p>
+          </div>
+          <div class="card-right" style="margin-left: 13rem">
+            <div class="card-tag">
+              <h5>Division</h5>
+              <a href="#">Data Analyst</a>
+            </div>
+            <div class="card-salary">
+              <p><b>$500k</b><span8>/year</span8></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- box6 company -->
+      <div class="card">
+        <div class="card-left yellow-bg">
+          <img src="./images/az.jpg" alt="" width="" />
+        </div>
+        <div class="card-content">
+          <h3 style="color: rgb(7, 7, 7)">AMAZON</h3>
+          <p class="card-details">DevOps , DevOps Enginner</p>
+          <p class="card-loc">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-geo-alt-fill"
+              viewBox="0 0 16 16"
+              style="color: rgb(255, 38, 38)"
+              ;
+            >
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+              />
+            </svg>
+            Austin, Texas, United States
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-calendar-check"
+              viewBox="0 0 16 16"
+              style="color: rgb(8, 85, 238)"
+            >
+              <path
+                d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+              />
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+              />
+            </svg>
+            1 hour ago
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-stopwatch"
+              viewBox="0 0 16 16"
+              style="color: goldenrod"
+            >
+              <path
+                d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5V5.6z"
+              />
+              <path
+                d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64a.715.715 0 0 1 .012-.013l.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354a.512.512 0 0 1-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5zM8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3z"
+              />
+            </svg>
+            Full Time
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-people-fill"
+              viewBox="0 0 16 16"
+              style="color: rgb(14, 102, 202)"
+            >
+              <path
+                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"
+              />
+            </svg>
+            50 Applicants
+          </p>
+        </div>
+        <div class="card-right" style="margin-left: 13rem">
+          <div class="card-tag">
+            <h5>Division</h5>
+            <a href="#">DevOps </a>
+          </div>
+          <div class="card-salary">
+            <p><b>$500k</b><span8>/year</span8></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- rightbox -->
+    <section>
+      <div class="detail">
+        <icon-icon class="close-detail" name="close-detail"></icon-icon>
+        <div class="detail-header">
+          <img src="./images/google.png" alt="" />
+          <h2>
+            <span1>G</span1><span2>O</span2><span3>O</span3><span4>G</span4
+            ><span5>L</span5><span6>E</span6>
+          </h2>
+          <p>Data Science</p>
+        </div>
+        <hr class="divider" />
+        <div class="detail-desc">
+          <div class="about">
+            <h4>About Company</h4>
+            <p>
+              Google is the largest search engine, mapping and navigation
+              application, email provider, office suite, video sharing platform,
+              photo and cloud storage provider, mobile operating system, web
+              browser, ML framework and The company is headquartered in Mountain
+              View, California.
+            </p>
+            <a href="#">Read More</a>
+          </div>
+          <hr class="divider" />
+          <div class="Qualification">
+            <h4>Qualification</h4>
+            <ul>
+              <li>a bachelor’s degree in a relevant field</li>
+              <li>Require relevant experience</li>
+              <li>
+                Strong technical skills such as coding, software development,
+                data analysis etc
+              </li>
+              <li>
+                candidates must have a legal work permit in the country where
+                the job is located.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="detail-btn">
+          <button class="btn-apply">Apply Now</button>
+          <button class="btn-save">Save Now</button>
+        </div>
+      </div>
+    </section>
+    <!-- Adding the library jquery -->
+    <script src="https://code.jquery-2.2.4.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
